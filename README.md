@@ -1,46 +1,69 @@
-# Breast cancer diagnosis predictor
+# Breast Cancer Prediction Website
 
-## Overview
+This project is a web application developed using **Streamlit** that allows users to predict whether a breast cancer case is benign or malignant. The application uses both Deep Learning (DL) and Machine Learning (ML) models to perform the predictions.
 
-The Breast Cancer Diagnosis app is a machine learning-powered tool designed to assist medical professionals in diagnosing breast cancer. Using a set of measurements, the app predicts whether a breast mass is benign or malignant. It provides a visual representation of the input data using a radar chart and displays the predicted diagnosis and probability of being benign or malignant. The app can be used by manually inputting the measurements or by connecting it to a cytology lab to obtain the data directly from a machine. The connection to the laboratory machine is not a part of the app itself.
+![Breast Cancer Prediction](https://drive.google.com/uc?id=1OxX9dezsLCo5QGQuPghkc73xl_Vi7are)
 
-The app was developed as a machine learning exercice from the public dataset [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Note that this dataset may not be reliable as this project was developed for educational purposes in the field of machine learning only and not for professional use.
+## Features
 
-A live version of the application can be found on [Streamlit Community Cloud](https://alejandro-ao-streamlit-cancer-predict-appmain-uitjy1.streamlit.app/). 
+- **User-Friendly Interface**: The application provides an intuitive UI developed with Streamlit, making it easy to upload data and view predictions.
+- **Multiple Prediction Models**: The application employs both a Deep Learning model and a Machine Learning model to predict breast cancer classification.
+- **Real-time Prediction**: Users can upload data in real-time to receive predictions immediately.
 
 ## Installation
 
-You can run this inside a virtual environment to make it easier to manage dependencies. I recommend using `conda` to create a new environment and install the required packages. You can create a new environment called `breast-cancer-diagnosis` by running:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/breast-cancer-prediction.git
+    cd breast-cancer-prediction
+    ```
 
-```bash
-conda create -n breast-cancer-diagnosis python=3.10 
-```
+2. **Install required dependencies**:
+    It's recommended to use a virtual environment to manage dependencies.
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+    pip install -r requirements.txt
+    ```
 
-Then, activate the environment:
+3. **Run the application**:
+    ```bash
+    streamlit run app/main.py
+    ```
 
-```bash
-conda activate breast-cancer-diagnosis
-```
+## Project Structure
 
-Then, activate the environment:
-
-```bash
-conda activate breast-cancer-diagnosis
-```
-
-To install the required packages, run:
-
-```bash
-pip install -r requirements.txt
-```
-
-This will install all the necessary dependencies, including Streamlit, OpenCV, and scikit-image.
+- `app/`: Contains the main application code.
+  - `main.py`: The entry point for running the Streamlit application.
+  - `models/`: Contains the pre-trained models for prediction.
+- `data/`: (Optional) Folder to store input data for testing.
+- `requirements.txt`: List of Python dependencies required to run the application.
+- `README.md`: Project documentation.
 
 ## Usage
-To start the app, simply run the following command:
 
-```bash
-streamlit run app/main.py
-```
+1. **Launching the App**: Run the application using the command provided above. This will open the Streamlit app in your default web browser.
 
-This will launch the app in your default web browser. You can then upload an image of cells to analyze and adjust the various settings to customize the analysis. Once you are satisfied with the results, you can export the measurements to a CSV file for further analysis.
+2. **Uploading Data**: You can upload a CSV file containing the relevant features for prediction. The application will process the data and display the prediction results.
+
+3. **Viewing Predictions**: The prediction results will be shown in the app interface, indicating whether the breast cancer case is predicted as benign or malignant.
+
+## Models
+
+The project uses two models:
+
+1. **Deep Learning Model**: Trained using a neural network to classify the data.
+2. **Machine Learning Model**: A traditional ML model (e.g., Random Forest or SVM) used for comparison.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries, please contact [your.email@example.com](mailto:your.email@example.com).
+
