@@ -14,7 +14,7 @@ This project is a web application developed using **Streamlit** that allows user
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/breast-cancer-prediction.git
+    git clone https://github.com/quyk67uet/BreastCancer_DL_ML_model.git
     cd breast-cancer-prediction
     ```
 
@@ -53,17 +53,8 @@ This project is a web application developed using **Streamlit** that allows user
 The project uses two models:
 
 1. **Deep Learning Model**: Trained using a neural network to classify the data.
-2. **Machine Learning Model**: A traditional ML model (e.g., Random Forest or SVM) used for comparison.
+2. **Machine Learning Model**: A traditional ML model (LogisticRegression) used for comparison.
 
-## Contributing
 
-Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Contact
-
-For any inquiries, please contact [your.email@example.com](mailto:your.email@example.com).
 
